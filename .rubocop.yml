@@ -11,7 +11,7 @@ AllCops:
   DisplayCopNames: true
 
 Layout/EndOfLine:
-  EnforcedStyle: crlf
+  EnforcedStyle: lf
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
