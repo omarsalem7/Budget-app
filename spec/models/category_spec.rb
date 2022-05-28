@@ -4,8 +4,8 @@ RSpec.describe Category, type: :model do
   before(:each) do
     @user = User.create(name: 'Omar', email: 'omarsalem123@gmail.com', password: '123455')
     expect(@user).to be_valid
-    @category = Category.create(name: 'hello', icon:"icon",
-                             user_id: @user.id)
+    @category = Category.create(name: 'hello', icon: 'icon',
+                                user_id: @user.id)
   end
 
   it 'spec for create a category' do
