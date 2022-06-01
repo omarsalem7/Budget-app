@@ -1,10 +1,14 @@
 <p style="color: green"><%= notice %></p>
-
 <%= render @category %>
-
+<% @expenses.each do |expense| %>
+  <div>
+    <%= expense.name %>
+  </div>
+<% end %>
 <div>
   <%= link_to "Edit this category", edit_category_path(@category) %> |
   <%= link_to "Back to categories", categories_path %>
-
+  <%= debug  @expenses%>
+  <%= link_to "New transaction", new_expense_path %>
   <%= button_to "Destroy this category", @category, method: :delete %>
 </div>
