@@ -1,2 +1,10 @@
-<h1>splashes#hello</h1>
-<p>Find me in app/views/splashes/hello.html.erb  hello sir omar semese marwan sad</p>
+<div class="">
+  <h1 class="title display-1 fw-bold">Bugo</h1>
+  <div class="splash-btns">
+    <%= button_to "LOG IN", new_user_session_path %>
+    <div class="d-flex justify-content-center">
+      <%= link_to 'Register', new_user_registration_path, class: "link" %>
+    </div>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger btn-sm" %>
+  </div>
+</div>
