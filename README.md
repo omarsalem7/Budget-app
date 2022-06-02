@@ -51,7 +51,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-
 ## Acknowledgments
 Original design idea by [Snapscan - iOs design and branding](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
 
