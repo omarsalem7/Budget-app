@@ -13,3 +13,86 @@
  *= require_tree .
  *= require_self
  */
+
+:root {
+  --main-color: #3678c2;
+  --secondary-color: #60b524;
+  --text-color: #434c55;
+}
+
+.back_btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.splash-btns {
+  position: absolute;
+  top: 80%;
+}
+
+.splash-btns button {
+  margin: 0 2px;
+  width: 100vw;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+}
+
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.center-links {
+  text-align: center;
+}
+
+.header {
+  background-color: var(--main-color);
+  height: 10vh;
+  color: #fff;
+  padding-right: 10px;
+}
+
+.log-form input {
+  display: block;
+  margin: auto auto;
+  width: 100%;
+  padding: 0.5em 0;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.25em;
+  color: #757575;
+}
+
+.log-form input:focus {
+  outline: none;
+}
+
+.new-btn {
+  background-color: var(--secondary-color);
+  padding: 1em 0;
+  width: 100%;
+}
+
+.new-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-group input[type='submit'] {
+  background-color: #3678c2;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+}

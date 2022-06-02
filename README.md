@@ -1,25 +1,40 @@
 ![](https://img.shields.io/badge/ROR-Template-blueviolet)
 
-# Project Title
+# Budget App
 
-> Description of the project
+> The Budget App is a mobile-focused web application for managing your spending: you have a list of expenses connected with a category, and you can see how much money you've spent on what and which category. It also displays you which category you spend the most money in and your total monthly expenses, allowing you to make better educated financial decisions.
 
 
 ## Built With
 
 - Ruby
 - Ruby on rails
+- BootStrap
+- Rubocop
+- Rspec & Capybara
+- Devise
+- cancancan
 - 💓
 
-# Get Started
+## Live Demo
+[Buget-App](https://cryptic-mesa-29074.herokuapp.com)
+
+## Get Started
 To get a local copy up and running follow these simple steps.
 
 ```bash
-$ git clone https://github.com/omarsalem7/{repo-name}
-$ cd {repo-name}
-$ bundle install 
+$ git clone https://github.com/omarsalem7/Budget-app
+$ cd Budget-app
+$ bundle install
+$ rake db:create
+$ rake db:migrate
 ```
-
+## Run tests
+```bash
+$ bundle exec  rspec ./spec/models
+$ bundle exec  rspec ./spec/features
+$ bundle exec  rspec ./spec/routing
+```
 ## Authors
 
 👤 **Omar Salem**
@@ -40,7 +55,10 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+- Original design idea by [Snapscan - iOs design and branding](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+- Microverse
 
-- Hat tip to anyone whose code was used
-- Inspiration
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 

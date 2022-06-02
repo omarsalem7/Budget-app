@@ -1,0 +1,22 @@
+<div class="log-form">
+  <header class="d-flex justify-content-between align-items-center header">
+    <img style="width:30px;height: 30px;"src="https://img.icons8.com/officel/344/back.png"/>
+    <h5>Log in</h5>
+  </header>
+  <div class="mx-2">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+      </div>
+      <div>
+        <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password" %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+    <div class="center-links">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
