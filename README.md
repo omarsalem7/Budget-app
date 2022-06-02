@@ -16,7 +16,10 @@
 - cancancan
 - 💓
 
-# Get Started
+## Live Demo
+[Buget-App](https://budget-app-v0.herokuapp.com/)
+
+## Get Started
 To get a local copy up and running follow these simple steps.
 
 ```bash
@@ -52,6 +55,10 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-Original design idea by [Snapscan - iOs design and branding](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+- Original design idea by [Snapscan - iOs design and branding](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+- Microverse
 
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
