@@ -8,12 +8,12 @@
 <% end %>
 <%= render @category %>
 <% @expenses.each do |expense| %>
-  <div>
-    Expense Name:<%= expense.name %>
+  <div class="d-flex justify-content-between mb-2 mx-4 p-2" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;background:#fffdf4;">
+    <div><%= expense.name.capitalize %></div>
+    <div>$<%= expense.amount %></div>
   </div>
 <% end %>
 <div>
-  <%= link_to "Edit this category", edit_category_path(@category) %>
   <div class="d-flex justify-content-center fixed-bottom new-btn">
     <%= link_to "New transaction", new_expense_path %>
   </div>

@@ -62,18 +62,18 @@
   padding-right: 10px;
 }
 
-input {
+.log-form input {
   display: block;
   margin: auto auto;
   width: 100%;
-  margin-bottom: 2em;
   padding: 0.5em 0;
   border: none;
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 1.25em;
   color: #757575;
 }
-input:focus {
+
+.log-form input:focus {
   outline: none;
 }
 
@@ -86,4 +86,13 @@ input:focus {
 .new-btn a {
   color: #fff;
   text-decoration: none;
+}
+
+.form-group input[type='submit'] {
+  background-color: #3678c2;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-top: 15px;
 }

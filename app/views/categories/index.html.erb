@@ -9,9 +9,6 @@
 <div id="categories">
   <% @categories.each do |category| %>
     <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
   <% end %>
 </div>
 <div class="d-flex justify-content-center fixed-bottom new-btn">
