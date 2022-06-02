@@ -1,12 +1,10 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= category.icon %>
-  </p>
-
+<div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" class="py-3 px-2 m-3">
+  <div  id="<%= dom_id category %>" class=" d-flex justify-content-evenly categ">
+    <div class="d-flex gap-3">
+      <img style="width:10%" src="<%=category.icon%>" alt="icon"/>
+      <div><%= category.name.capitalize %></div>
+    </div>
+    <div class="d-flex ">  $<%= total_amount_helper(Expense.all.where(category_id:category.id)) %></div>
+  </div>
+  <div class="d-flex justify-content-between"><small class="mx-5"> <%= category.created_at.strftime("%e %b %Y") %></small>  <%= link_to image_tag("https://img.icons8.com/ios/344/right--v1.png"),category, class: "back_btn" %></div>
 </div>

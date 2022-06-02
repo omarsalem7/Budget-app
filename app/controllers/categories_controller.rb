@@ -3,10 +3,12 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!, except: [:public]
 
   def index
-    @categories = Category.all
+    @categories = Category.where(user_id: current_user.id)
   end
 
-  def show; end
+  def show
+    @expenses = Expense.all.where(category_id: @category.id)
+  end
 
   def new
     @category = Category.new
@@ -16,6 +18,7 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.new(category_params)
+    @category.user_id = current_user.id
 
     respond_to do |format|
       if @category.save
@@ -33,14 +36,6 @@ class CategoriesController < ApplicationController
       else
         format.html { render :edit, status: :unprocessable_entity }
       end
-    end
-  end
-
-  def destroy
-    @category.destroy
-
-    respond_to do |format|
-      format.html { redirect_to categories_url, notice: 'Category was successfully destroyed.' }
     end
   end
 
