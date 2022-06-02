@@ -4,9 +4,9 @@ RSpec.describe 'category index page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Omar', email: 'omara@gmail.com', password: '123455')
     @category = Category.create(name: 'hello', icon: 'icon',
-        user_id: @user.id)
-        @expense = Expense.create(name: 'expense', amount: 4,
-            user_id: @user.id, category_id: @category.id)
+                                user_id: @user.id)
+    @expense = Expense.create(name: 'expense', amount: 4,
+                              user_id: @user.id, category_id: @category.id)
     visit new_user_session_path
     fill_in 'Email', with: 'omara@gmail.com'
     fill_in 'Password', with: '123455'
