@@ -29,6 +29,8 @@ $ rake db:migrate
 ## Run tests
 ```bash
 $ bundle exec  rspec ./spec/models
+$ bundle exec  rspec ./spec/features
+$ bundle exec  rspec ./spec/routing
 ```
 ## Authors
 
