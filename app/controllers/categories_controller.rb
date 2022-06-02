@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-   @expenses=Expense.all.where(category_id:@category.id)
+    @expenses = Expense.all.where(category_id: @category.id)
   end
 
   def new
@@ -18,7 +18,7 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.new(category_params)
-    @category.user_id = current_user.id 
+    @category.user_id = current_user.id
 
     respond_to do |format|
       if @category.save
