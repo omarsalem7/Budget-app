@@ -17,7 +17,7 @@
 - 💓
 
 ## Live Demo
-[Buget-App](https://cryptic-mesa-29074.herokuapp.com)
+[Buget-App](https://my-budget-app0.herokuapp.com/)
 
 ## Get Started
 To get a local copy up and running follow these simple steps.
